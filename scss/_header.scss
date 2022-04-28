@@ -1,0 +1,125 @@
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 0 0 15px rgb(0, 0, 0.5);
+    padding: 5px 15px;
+    z-index: 999;
+
+    div {
+        a {
+            .logo_Image {
+                width: 60px;
+                height: 60px;
+
+            }
+        }
+    }
+
+    ;
+
+    .header__burguerMenu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+        font-size: 2rem;
+        background-color: white;
+        border: none;
+        color: grey;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        cursor: pointer;
+        transition: box-shadow 0.5s ease-in;
+
+        &:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    input#menu {
+        display: none;
+
+        &:checked~.header__menudespegable {
+            display: block;
+        }
+    }
+
+    nav .header__menudespegable {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 260px;
+        background-color: rgb(255, 255, 255);
+
+        .header__closeMenu {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 1.5rem;
+            color: rgb(35, 3, 107);
+        }
+        ul .lista__menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            li {
+                text-transform: uppercase;
+                list-style: none;
+                font-weight: 600;
+                border-radius: 5px;
+                padding: 1rem;
+                a {
+                    text-decoration: none;
+                    color: rgb(35, 3, 107);
+                }
+                &:hover {
+                    background-color: rgb(250, 250, 250);
+                }
+            }
+        }
+
+    }
+}
+
+/* Media queries HEADER*/
+
+@media screen and (min-width: 768px) {
+    header{
+        div{
+            a{
+                .logo_Image {
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+        }
+    .header__burguerMenu {
+        display: none;
+      }
+    .header__menudespegable {
+        display: initial;
+        position: inherit;
+        height: 80px;
+        .header__closeMenu {
+        display: none;
+        ul {
+            flex-direction: row;
+            justify-content: right;
+          }
+      }
+    }
+
+}
+}

@@ -1,0 +1,62 @@
+/* ---------------- PÁGINA CONTACTO ------------------*/
+
+/* display GRID */
+.main_contacto{
+    grid-area: principal;
+    grid-template-rows: 1fr 1fr 3fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+        "titulo titulo"
+        "parrafo parrafo"
+        "form mapa"
+        "form datos";
+        .flex-containter__contacto {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            padding: 10px;
+            box-shadow: 0 0 15px rgb(0, 0, 0.5);
+            form {
+                width: 280px;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-content: center;
+                align-items: center;
+                margin: 10px;
+                padding: 10px;
+           
+                .textarea__contacto {
+                    resize: none;
+                    width: 250px;
+                    margin: 10px;
+                    }
+                div{
+                    button {                        margin: 0px 10px 10px 10px;
+                        padding: 5px;
+                        background-color: rgb(109, 109, 109);
+                        border: none;
+                        border-radius: 5px;
+                        text-transform: capitalize;
+                        font-size: 1rem;
+                        font-weight: 300;
+                        text-decoration: none;
+                        color: white;
+                        width: 80px;
+                                            
+                    }
+                }
+            }
+            .mapa {
+                width: 300px;
+                height: 300px;
+                border:0;
+                margin: 10px;
+                padding: 10px;
+            }
+            
+        }
+
+}
