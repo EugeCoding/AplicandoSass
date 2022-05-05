@@ -135,7 +135,7 @@ main .button_contactar {
         resize: none;
         width: 250px;
         margin: 10px; }
-      .main_contacto .flex-containter__contacto form div button {
+      .main_contacto .flex-containter__contacto form div .btn__limpiar, .main_contacto .flex-containter__contacto form div .btn__enviar {
         margin: 0px 10px 10px 10px;
         padding: 5px;
         background-color: #6d6d6d;
@@ -153,6 +153,18 @@ main .button_contactar {
       border: 0;
       margin: 10px;
       padding: 10px; }
+
+.font__maps {
+  color: #301dde;
+  font-size: 1rem; }
+
+.btn__enviar {
+  background-color: #0022fc !important; }
+
+.centrar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
 
 body {
   background-color: white;
