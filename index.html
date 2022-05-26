@@ -1,233 +1,288 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="keywords" content="abogados, servicios jurídicos, legal, abogados en resistencia chaco, derecho comercial, derecho empresario,">
-  <meta name="description" content="El estudio Morenate & Serrano ofrece asesoría jurídica para personas y empresas en Resistencia Chaco">
+  <meta name="keywords"
+    content="abogados, servicios jurídicos, legal, abogados en resistencia chaco, derecho comercial, derecho empresario,">
+  <meta name="description"
+    content="El estudio Morenate & Serrano ofrece asesoría jurídica para personas y empresas en Resistencia Chaco">
   <title>Morenate & Serrano</title>
   <link rel="icon" href="../images/logo.jpg" type="image/jpg">
   <!-- Bootstrap CDN Stylesheet -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <!-- Link estilos -->
-    <link rel="stylesheet" href="./css/estilosSass.css">
+  <link rel="stylesheet" href="./css/estilosSass.css">
   <!-- Font awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-
+  <!-- Animated Style -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
   <!-- HEADER -->
   <header>
-    <div>
-      <a href="./index.html">
-        <img src="./images/logo.jpg" alt="logo" class="logo_Image">
-      </a>
-    </div>
-    <label for="menu" class="header__burguerMenu">
-      <i class="fa-solid fa-bars"></i>
-    </label>
-    <input type="checkbox" id="menu">
-    <nav class="header__menudespegable">
-      <label for="menu" class="header__closeMenu">
-        <i class="fa-solid fa-circle-xmark"></i>
-      </label>
-      <ul class="lista__menu">
-        <li><a href="./index.html">Inicio</a></li>
-        <li><a href="./pages/nosotros.html">Nosotros</a></li>
-        <li><a href="./pages/areas_de_practica.html">Áreas de Práctica</a></li>
-        <li><a href="./pages/servicios.html">Servicios</a></li>
-        <li><a href="./pages/contacto.html">Contacto</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark  sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">
+          <img src="./images/white_logo.svg" alt="Logo de Morenate & Serrano" width="45"
+            class="d-inline-block align-text-center m-1">
+          <span class="d-none d-sm-inline mx-2">Morenate & Serrano</span>
+        </a>
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle d-flex justify-content-end" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">El Estudio
+              </a>
+              <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item d-flex justify-content-end text-light"
+                    href="./pages/nosotros.html">Nosotros</a>
+                </li>
+                <li><a class="dropdown-item d-flex justify-content-end text-light" href="./pages/contacto.html">Donde
+                    estamos</a></li>
+                <li><a class="dropdown-item d-flex justify-content-end text-light" href="./pages/rrhh.html">Sumate al
+                    Equipo</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item d-flex justify-content-end">
+              <a class="nav-link" aria-current="page" href="./pages/servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item d-flex justify-content-end">
+              <a class="nav-link" href="./pages/areas_de_practica.html">Áreas de Práctica</a>
+            </li>
+            <li class="nav-item d-flex justify-content-end">
+              <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
+
+
   <!-- MAIN  -->
-  <main class="p-2 m-2">
-    <section class="containe-fluid p-2 pb-4">
-      <h1 class="text-center display-1 fw-bold text-primary p-2">MORENATE & SERRANO</h1>
-      <h2 class="text-center display-4 text-secondary p-2">Asesoría legal y servicios para empresas</h2>
+  <main class="main_index">
+    <section class="fondo__verde container-fluid">
+      <h1 class="text-center animate__animated animate__fadeInLeft">Morenate & Serrano</h1>
+      <h2 class="text-center animate__animated animate__fadeInRight">Asesoría legal y servicios para empresas</h2>
       <p class="text-center">Somos una firma de abogados especializada en derecho corporativo. Brindamos
         soluciones jurídicas innovadoras y efectivas a empresas de diversos rubros.</p>
       <!--Botón CONTACTAR-->
-      <button type="button" class="btn btn-outline-primary button_contactar"><a
-          href="./contacto.html">Contactar</a></button>
+      <div class="centrar">
+        <div class="btn__verde"><a href="./contacto.html">Contactar</a></div>
+      </div>
+      <div class="container-fluid centrar">
+        <img class="foto_ilustrativa" src="./images/4aqua.png" alt="abogado explicando un contrato a un cliente">
+      </div>
     </section>
 
-    <h2 class="text-center text-primary pt-4 pb-2">Áreas de Práctica</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-      fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-      deserunt mollit anim id est laborum. </p>
+    <section class="fondo__gradientverde">
 
-    <div class="accordion pb-4" id="accordionExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-            aria-expanded="true" aria-controls="collapseOne">
-            Derecho comercial
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-          data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eligendi assumenda blanditiis, veritatis
-            architecto obcaecati officiis fugit, odio culpa ipsum nulla velit, hic autem perferendis deserunt
-            reprehenderit facere dolores iusto!
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Derecho Societario
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-          data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sed consequatur, fugit itaque eaque
-            numquam? Debitis, consequatur! Dolore, eaque aperiam ut odit, possimus vitae eos quia sint nobis dolores
-            repudiandae.
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Concursos y Quiebras
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-          data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed ex voluptates deleniti, aperiam vero ducimus
-            reiciendis temporibus dolores? Doloribus dolores dicta deleniti eligendi repellendus cupiditate at fugiat
-            quaerat laborum aspernatur?
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-            aria-expanded="true" aria-controls="collapseOne">
-            Contratos
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-          data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eligendi assumenda blanditiis, veritatis
-            architecto obcaecati officiis fugit, odio culpa ipsum nulla velit, hic autem perferendis deserunt
-            reprehenderit facere dolores iusto!
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-            aria-expanded="true" aria-controls="collapseOne">
-            Derecho del Consumidor
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-          data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eligendi assumenda blanditiis, veritatis
-            architecto obcaecati officiis fugit, odio culpa ipsum nulla velit, hic autem perferendis deserunt
-            reprehenderit facere dolores iusto!
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-            aria-expanded="true" aria-controls="collapseOne">
-            Derecho Laboral
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-          data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eligendi assumenda blanditiis, veritatis
-            architecto obcaecati officiis fugit, odio culpa ipsum nulla velit, hic autem perferendis deserunt
-            reprehenderit facere dolores iusto!
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-            aria-expanded="true" aria-controls="collapseOne">
-            Derecho Bancario
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-          data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eligendi assumenda blanditiis, veritatis
-            architecto obcaecati officiis fugit, odio culpa ipsum nulla velit, hic autem perferendis deserunt
-            reprehenderit facere dolores iusto!
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <section class="container pb-4">
-      <h2 class="text-center text-primary pt-4 pb-2"> Servicios online</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-        deserunt mollit anim id est laborum. </p>
-    </section>
+      <h2 class="text-center estilo__titulo">Áreas de Práctica</h2>
+      <p>Contamos con un equipo con amplia experiencia en los diversos campos que afectan a tu empresa o emprendimiento,
+        para brindarte un servicio a medida para las necesidades de tu negocio. </p>
 
-    <div class="row">
-      <div class="col-sm-6">
-        <img class="card-img-top" src="./images/servicios_online2.jpg" alt="servicios online">
-        <div class="card">
-          <div class="d-flex flex-column card-body">
-            <h3 class="card-title text-center text-primary">Solicitud de presupuesto</h3>
-            <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit rerum
-              expedita hic
-              distinctio officia labore dolores minima, ullam ipsum eligendi mollitia tempore! Quis magnam praesentium
-              rerum.</p>
-            <a href="./pages/contacto.html" class="btn btn-primary button_contactar">Contactar</a>
+      <div class="accordion pb-4 mx-2" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Derecho comercial
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <ul>
+                <li>Due diligence o auditoria legal</li>
+                <li>Asesoramiento a startups</li>
+                <li>Importaciones y exportaciones</li>
+                <li>Gestión antes registros administrativos</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Derecho Societario
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <ul>
+                <li>Asesoramiento en materia societaria</li>
+                <li>Constitución de sociedades</li>
+                <li>Compra y venta de paquetes accionarios</li>
+                <li>Conflictos societarios</li>
+                <li>Inscripción de resoluciones ante los Registros correspondientes</li>
+                <li>Asesoramiento permanente en la toma de decisiones con impacto en la sociedad, las obligaciones de
+                  los socios y acuerdos de accionistas</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Concursos y Quiebras
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <ul>
+                <li>Asesoramiento sobre régimen falencial</li>
+                <li>Restauración de deudas</li>
+                <li>Negociación y acuerdo con acreedores</li>
+                <li>Representación en procesos concursales</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Contratos
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <ul>
+                <li>Negociación y redacción de acuerdos con proveedores </li>
+                <li>Contratos con el Estado (derecho administrativo)</li>
+                <li>Representación extrajudicial y judicial en conflictos contractuales</li>
+                <li>Contratos de arrendamiento comercial</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Defensa del Consumidor
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <ul>
+                <li>Asesoramiento integral en materia de consumo</li>
+                <li>Gestión de reclamos de consumidores</li>
+                <li>Representación en fueros municipal, provincial y nacional</li>
+                <li>Apelación de sanciones y multas</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Derecho Laboral
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <ul>
+                <li>Asesoramiento laboral integral</li>
+                <li>Preparación de contratos laborales</li>
+                <li>Representación individual y colectiva (relaciones con gremios/sindicatos)</li>
+                <li>Litigios laborales (judicial y sede administrativa)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Derecho Bancario
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <ul>
+                <li>Cuenta corriente bancaria y préstamos comerciales</li>
+                <li>Ejecución de cheques y pagarés</li>
+                <li>Instrumentación de contratos bancarios</li>
+                <li>Medios de pago y garantías bancarias</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-sm-6">
-        <img class="card-img-top" src="./images/servicios_online.jpg" alt="servicios online">
-        <div class="card">
-          <div class="d-flex flex-column card-body">
-            <h3 class="card-title text-center justify-content-center text-primary">Consulta online</h3>
-            <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sit
-              aut ipsam
-              laudantium repellat id libero odit error vero facilis sunt sed adipisci distinctio quasi magnam. Maiores
-              quos atque odio.</p>
-            <a href="./pages/contacto.html" class="btn btn-primary button_contactar">Contactar</a>
+
+      <section class="container">
+        <h2 class="text-center estilo__subtituloBlanco"> Atención online</h2>
+        <p class="text-center">Además de nuestros canales de atención habituales, ofrecemos la vía de atención online
+          para solicitud de presupuestos y consultas simples.
+        </p>
+      </section>
+      <section class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <img class="card-img-top" src="./images/servicios_online2.jpg" alt="servicios online">
+            <div class="card">
+              <div class="d-flex flex-column card-body">
+                <h3 class="card-title text-center text-primary">Solicitud de presupuesto</h3>
+                <p class="card-text text-center">Escribanos para obtener un presupuesto personalizado para el servicio
+                  que tu negocio o empresa necesita. Ofrecemos tarifas fijas para paquetes de servicios a empresas.</p>
+                <button type="button" class="btn btn__verde">
+                  <a href="./pages/contacto.html">Contactar</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <img class="card-img-top" src="./images/servicios_online.jpg" alt="servicios online">
+            <div class="card">
+              <div class="d-flex flex-column card-body">
+                <h3 class="card-title text-center justify-content-center text-primary">Consulta online</h3>
+                <p class="card-text text-center">Escribanos con su inquietud y responderemos a la brevedad. Además,
+                  ofrecemos un paquete de consultas online a medida, para lograr una mayor eficiencia de gastos en
+                  materia legal. </p>
+                <button type="button" class="btn btn__verde">
+                  <a href="./pages/contacto.html">Contactar</a>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div> 
-  <div class="centrar">
-    <button type="button" class="btn btn-outline-secondary mt-5 mb-2">
-      <a href="#top">Arriba</a>
-    </button>
-  </div>   
+        <div class="centrar">
+          <button type="button" class="btn btn__blanco mt-5 mb-2">
+            <a href="#top">Arriba</a>
+          </button>
+        </div>
+        </div>
 
+      </section>
   </main>
 
   <!-- FOOTER  -->
   <footer class="bg-secondary text-white pt-4">
     <div class="container">
       <nav class="row justify-content-center">
-        <a href="./index.html" class="col-12 col-md-3 text-reset text-decoration-none fw-bold d-flex align-items-center justify-content-center mb-3 mb-md-3">
+        <a href="./index.html"
+          class="col-12 col-md-3 text-reset text-decoration-none fw-bold d-flex align-items-center justify-content-center mb-3 mb-md-3">
           <img src="./images/logo.jpg" alt="logo" class="img-logo m-2" width="50px">MORENATE & SERRANO
         </a>
         <ul class="col-6 col-md-3 list-unstyled pb-3 ">
@@ -239,25 +294,28 @@
         </ul>
         <ul class="col-6 col-md-3 list-unstyled pb-3">
           <li class="fw-bold">SERVICIOS</li>
-          <li class="d-flex justify-content-between"><a class="text-white text-decoration-none" href="./pages/areas_de_practica.html ">Áreas
-              de Práctica</a></li>
+          <li class="d-flex justify-content-between"><a class="text-white text-decoration-none"
+              href="./pages/areas_de_practica.html ">Áreas de Práctica</a></li>
           <li><a class="text-white text-decoration-none" href="./pages/servicios.html">Servicios</a></li>
         </ul>
         <ul class="col-12 col-md-3 list-unstyled">
           <li class="fw-bold ">SEGUINOS
-          <li><a class="text-white text-decoration-none" href="#"></a>
-            <i class="fa-brands fa-linkedin p-2"></i> Estudio Morenate & Serrano
+          <li>
+          <li>
+            <i class="fa-brands fa-linkedin p-2"></i>
+            <a class="text-white text-decoration-none" href='https://www.instagram.com/'>Estudio Morenate & Serrano</a>
           </li>
-          <li><a class="text-white text-decoration-none" href="#"></a>
-            <i class="fa-brands fa-linkedin p-2"></i> Serrano
+          <li>
+            <i class="fa-brands fa-linkedin p-2"></i>
+            <a class="text-white text-decoration-none" href='https://www.instagram.com/'>Serrano</a>
           </li>
-          <li><a class="text-white text-decoration-none" href="#"></a>
-            <i class="fa-brands fa-linkedin p-2"></i> Morenate
+          <li>
+            <i class="fa-brands fa-linkedin p-2"></i>
+            <a class="text-white text-decoration-none" href='https://www.instagram.com/'>Morenate</a>
           </li>
         </ul>
       </nav>
     </div>
-
   </footer>
 
   <!-- Bootstrap Scripts -->
